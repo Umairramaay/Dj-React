@@ -25,7 +25,7 @@ SECRET_KEY = 'f#j4u7h97b$56x#&^_drkjudik0+&#-w1q$l)6-le$m&+!%0_+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['react-django-blog-post.herokuapp.com']
+ALLOWED_HOSTS = ['react-django-blog-post.herokuapp.com','127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -54,6 +54,7 @@ SITE_ID = 1
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -154,4 +155,4 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
-STATICFILES_STORAGE= 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
