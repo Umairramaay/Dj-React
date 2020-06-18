@@ -71,7 +71,7 @@ ROOT_URLCONF = 'djreact.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'build')],
+        'DIRS': [r'C:\Users\Umair_Ramay\Envs\djreact\build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -170,3 +170,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# print(BASE_DIR)
+# "C:\Users\Umair_Ramay\Envs\djreact\build"
