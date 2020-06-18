@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f#j4u7h97b$56x#&^_drkjudik0+&#-w1q$l)6-le$m&+!%0_+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['strider-blog.herokuapp.com','127.0.0.1', 'localhost']
 
