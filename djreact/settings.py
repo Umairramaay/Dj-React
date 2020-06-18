@@ -25,7 +25,9 @@ SECRET_KEY = 'f#j4u7h97b$56x#&^_drkjudik0+&#-w1q$l)6-le$m&+!%0_+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['react-django-blog-post.herokuapp.com','127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['strider-blog.herokuapp.com','127.0.0.1', 'localhost']
+
+# ALLOWED_HOSTS = ['react-django-blog-post.herokuapp.com''.herokuapp.com','strider-blog.herokuapp.com']
 
 
 # Application definition
