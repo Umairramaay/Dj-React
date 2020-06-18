@@ -146,27 +146,27 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+django_heroku.settings(locals())
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# STATIC_URL = '/static/'
-
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR,'build/static')
-# ]
-
-# STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-django_heroku.settings(locals())
-
-
 STATIC_URL = '/static/'
-# Place static in the same location as webpack build files
-STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')
-STATICFILES_DIRS = []
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'build/static')
+]
+
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
+
+# STATIC_URL = '/static/'
+# # Place static in the same location as webpack build files
+# STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')
+# STATICFILES_DIRS = []
+
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
